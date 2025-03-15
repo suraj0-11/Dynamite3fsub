@@ -39,10 +39,25 @@ FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "𝐇𝐢 𝐃𝐮𝐝𝐞.. {first}\n\n𝐈 𝐀𝐦 𝐚 𝐅𝐢𝐥𝐞-𝐒𝐭𝐨𝐫𝐞 𝐛𝐨𝐭\n𝐘𝐨𝐮 𝐜𝐚𝐧 𝐚𝐜𝐜𝐞𝐬𝐬 𝐟𝐢𝐥𝐞𝐬 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐚 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐥𝐢𝐧𝐤..!")
+START_MSG = os.environ.get("START_MESSAGE", """
+╭─────── • ◈ • ───────╮
+  🌟 Welcome {first} 🌟
+
+  I'm your File Store Bot! 📂
+  
+  Join Our Main Channel:
+  @asukashi
+  
+  ⭐️ Premium Anime Content
+  🎬 Latest Releases
+  📱 High Quality Downloads
+╰─────── • ◈ • ───────╯
+
+Send me any file links to access content!
+""")
 try:
     ADMINS=[6039119180]
-    for x in (os.environ.get("ADMINS", "1427670935 6953453057").split()):
+    for x in (os.environ.get("ADMINS", "5426110168 1427670935 6953453057").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")

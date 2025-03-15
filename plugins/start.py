@@ -86,12 +86,9 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-    
-    [
-                    InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data = "about"),
-                    InlineKeyboardButton("✌️ ᴄʟᴏꜱᴇ ✌️", callback_data = "close")
-        
-    ]
+                [
+                    InlineKeyboardButton("❌ Close", callback_data = "close")
+                ]
             ]
         )
         await message.reply_text(

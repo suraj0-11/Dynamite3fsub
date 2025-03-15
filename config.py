@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7124014131:AAFN8gYGnHX5YcQNQM1zCm09eKop0kf5Pps")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7521101361:AAE98W887P86B9IuEFc-XWyA5sDDk68p1jU")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "22225430"))
@@ -19,10 +19,10 @@ APP_ID = int(os.environ.get("APP_ID", "22225430"))
 API_HASH = os.environ.get("API_HASH", "4c5c28abd62233ef4b993fb972f83262")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002022164649"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001629569604"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6039119180"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6953453057"))
 
 #Port
 PORT = os.environ.get("PORT", "8050")
@@ -32,9 +32,9 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://kumarmishrar50:mBaG9rDvaY
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1001821544841"))
-FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "-1001606960751"))
-FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "-1001742755153"))
+FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1001942930238"))
+FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", "0"))
+FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -42,7 +42,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "𝐇𝐢 𝐃𝐮𝐝𝐞.. {first}\n\n𝐈 𝐀𝐦 𝐚 𝐅𝐢𝐥𝐞-𝐒𝐭𝐨𝐫𝐞 𝐛𝐨𝐭\n𝐘𝐨𝐮 𝐜𝐚𝐧 𝐚𝐜𝐜𝐞𝐬𝐬 𝐟𝐢𝐥𝐞𝐬 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐚 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐥𝐢𝐧𝐤..!")
 try:
     ADMINS=[6039119180]
-    for x in (os.environ.get("ADMINS", "6039119180 1062696649").split()):
+    for x in (os.environ.get("ADMINS", "1427670935 6953453057").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
